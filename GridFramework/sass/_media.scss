@@ -1,0 +1,62 @@
+@media (max-width: 887px) {
+
+  body{
+    background-color: yellow;
+  }
+
+}
+
+@media (max-width: 1183px ) and ( min-width: 888px) {
+
+  body{
+    background-color: purple;
+  }
+}
+
+@media (min-width: 1184px) {
+
+  body{
+    background-color: green;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .row{
+    width: 1280px;
+  }
+
+}
+
+
+@media (min-width: 200px ) and ( max-width: 399px) {
+
+  $size: xs;
+  $columns: 6;
+
+  @for $i from 1 through $columns{
+
+    .col-#{$i}-#{$size} {
+        width: $i*(100%/$columns);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+  }
+}
+
+@media (min-width: 400px ) and ( max-width: 599px) {
+  $size: s;
+}
+
+@media (min-width: 600px ) and ( max-width: 799px) {
+  $size: m;
+}
+
+@media (min-width: 800px ) and ( max-width: 999px) {
+  $size: l;
+}
+
+@media (min-width: 1000px ) {
+  $size: xl;
+}

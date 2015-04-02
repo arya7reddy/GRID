@@ -1,0 +1,40 @@
+@mixin barclays_grid(
+    $size: xl,
+    $columns: 16,
+    $gutter: 20px,
+    $left_outer_gutter_width: 22px,
+    $right_outer_gutter_width: 42px,
+    $indent: true
+  ){
+  
+  $column_width: 100%/$columns;
+
+  body{
+    min-width: 444px;
+    width: 100%;
+  }
+
+  .row{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    padding-left: $left_outer_gutter_width;
+    padding-right: $right_outer_gutter_width;
+  }
+
+  .col{
+    display: inline;
+    float: left;
+    margin-right: $gutter;
+  }
+
+  .relative{
+    position: relative;
+  }
+
+  .container-#{$columns} {
+    
+
+  }
+
+}

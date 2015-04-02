@@ -1,0 +1,100 @@
+@mixin grid_base(
+    $columns: 12,
+    $width: 960px,
+    $gutter: 20px,
+    $outer_gutter_width: 22px,
+    $indent: true,
+    $push: true
+  ){
+  
+  $column_width: $width/$columns;
+
+  body{
+  //  min-width: $width;
+  }
+
+  .row{
+    width: 100%;
+    float: left;
+  }
+
+  .col{
+    display: inline;
+    float: left;
+    margin-left: $gutter/2;
+    margin-right: $gutter/2;
+  }
+
+  .relative{
+    position: relative;
+  }
+
+  @include generate_grid(
+    $columns,
+    $width,
+    $gutter,
+    $outer_gutter_width,
+    $indent,
+    $push
+  );
+
+}
+
+@mixin generate_grid(
+    $columns: 12,
+    $width: 960px,
+    $gutter: 20px,
+    $outer_gutter_width: 22px,
+    $indent: true,
+    $push: true
+  ){
+
+  $column_width: $width/$columns;
+  $container_name: ".container_#{$columns}";
+
+  #{$container_name} {
+    margin-left: auto;
+    margin-right: auto;
+    width: $width;
+    padding-left: $outer_gutter_width;
+    padding-right: $outer_gutter_width;
+  }
+
+  @for $i from 1 through $columns{
+
+    .col-#{$i} {
+      @extend .col;
+      #{$container_name} &{
+        width: $i * $column_width - $gutter;  
+      }
+    }
+
+
+    #{$container_name} {
+      @if $indent == true {
+        .indent__#{$i} {
+          padding-left: $i * $column_width;
+        }
+
+        .rightIndent__#{$i} {
+          padding-right: $i * $column_width;
+        }
+      }
+    }
+
+    @if $push == true {
+      .push__#{$i} {
+        @extend .relative;
+        #{$container_name} &{
+          left: $i * $column_width;
+        }
+      }
+      .pull__#{$i} {
+        @extend .relative;
+        #{$container_name} &{
+          left: - $i * $column_width;
+        }
+      }
+    }
+  }
+}
