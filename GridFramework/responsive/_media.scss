@@ -1,46 +1,27 @@
-@media (min-width: 1280px) {
-
-  .row{
-    width: 1280px;
-  }
-
-}
+// Pass size : (s, m, xl), columns : (6, 12, 16), gutter (4.5%, 1.689%).
 
 @media (max-width: 887px) {
 
-  $size: s;
-  $columns: 6;
-  $gutter: 4.5%;
-
-  @include column_size(
-    $size,
-    $columns,
-    $gutter
-  );
+  @include column_size(s, 6, 4.5%);
 }
 
 @media (min-width: 888px ) and ( max-width: 1183px) {
-  $size: m;
-  $columns: 12;
-  $gutter: 1.689%;
-
-  @include column_size(
-    $size,
-    $columns,
-    $gutter
-  );
   
+  @include column_size(m, 12, 1.689%);
 }
 
 @media (min-width: 1184px ) {
   
-  $size: xl;
-  $columns: 16;
-  $gutter: 1.689%;
+  @include column_size(xl, 16, 1.689%);
+}
 
-  @include column_size(
-    $size,
-    $columns,
-    $gutter
-  );
+@media (min-width: 1280px) {
+
+  .container_16{
+    width: 1214px;
+    height: 500px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: auto;
+  }
 }
