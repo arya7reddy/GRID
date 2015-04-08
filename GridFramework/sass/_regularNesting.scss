@@ -1,0 +1,43 @@
+.notification{
+
+  border: 1px solid;
+  padding: 10px;
+
+
+  .icon-success{
+    content: "c";
+    color: green;
+  }
+
+  .icon-warning{
+    content: "c";
+    color: yellow;
+  }
+
+  .icon-error{
+    content: "c";
+    color: red;
+  }
+
+}
+
+.notification_success{
+
+  border-color: green;
+  background-color: black;
+  color: white;
+}
+
+.notification-warning{
+
+  border-color: yellow;
+  background-color: black;
+  color: white;
+}
+
+.notification-error{
+
+  border-color: red;
+  background-color: black;
+  color: white;
+}
