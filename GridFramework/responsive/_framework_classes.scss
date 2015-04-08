@@ -1,0 +1,21 @@
+// Pad Class
+.pad{
+  padding: 10px;
+}
+
+// Pad all the kids class
+.padkids > *{
+  padding: 10px; 
+}
+
+//Fraction Grid classes.
+@for $i from 1 through 9{
+  @for $j from $i+1 through 10{
+    @if $i < $j {
+      .f#{$i}over#{$j} {
+        float: left;
+        width: ($i/$j)*100%;
+      }
+    }
+  }
+}
