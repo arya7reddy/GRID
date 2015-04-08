@@ -9,18 +9,6 @@
 
   @include generate_grid($size, $columns, $gutter);
 
-  @for $i from 1 through $columns{
-
-    .col-#{$i}-#{$size} {
-      width: $i * $column_width - $gutter !important;
-      margin-left: $gutter/2;
-      margin-right: $gutter/2;
-      display: inline;
-      float: left;
-    }
-  }
-
-
   // Hide classes for different view ports.
   @if $size == s {
     .hide-gte-s, .hide-lte-xl, .hide-lte-m, .hide-lte-s{
@@ -72,7 +60,7 @@
 
   @for $i from 1 through $columns{
 
-    .col-#{$i} {
+    .col-#{$i}, .col-#{$i}-#{$size} {
       display: inline;
       float: left;
       margin-left: $gutter/2;
@@ -82,17 +70,11 @@
         width: $i * $column_width - $gutter;
       }
     }
-    
-    .indent-#{$i}-#{$size} {
+
+    .indent-#{$i}, .indent-#{$i}-#{$size} {
       position: relative;
       #{$container_name} &{
         left: $i * $column_width;
-      }
-    }
-    .rightIndent-#{$i}-#{$size} {
-      position: relative;
-      #{$container_name} &{
-        left: - $i * $column_width;
       }
     }
     

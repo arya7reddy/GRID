@@ -1,22 +1,18 @@
 // Parameters to pass are:  size : (s, m, xl), columns : (6, 12, 16), gutter (4.5%, 1.689%).
 
 @media (max-width: 887px) {
-
   @include column_size(s, 6, 4.5%);
 }
 
 @media (min-width: 888px ) and ( max-width: 1183px) {
-  
   @include column_size(m, 12, 1.689%);
 }
 
 @media (min-width: 1184px ) {
-  
   @include column_size(xl, 16, 1.689%);
 }
 
 @media (min-width: 1280px) {
-
   .container_16{
     width: 1214px;
     padding-left: 32px;
