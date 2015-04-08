@@ -1,4 +1,4 @@
-// Pass size : (s, m, xl), columns : (6, 12, 16), gutter (4.5%, 1.689%).
+// Parameters to pass are:  size : (s, m, xl), columns : (6, 12, 16), gutter (4.5%, 1.689%).
 
 @media (max-width: 887px) {
 
@@ -19,7 +19,6 @@
 
   .container_16{
     width: 1214px;
-    height: 500px;
     padding-left: 32px;
     padding-right: 32px;
     margin: auto;

@@ -12,7 +12,7 @@
   @for $i from 1 through $columns{
 
     .col-#{$i}-#{$size} {
-      width: $i * $column_width - $gutter;
+      width: $i * $column_width - $gutter !important;
       margin-left: $gutter/2;
       margin-right: $gutter/2;
       display: inline;
@@ -20,6 +20,8 @@
     }
   }
 
+
+  // Hide classes for different view ports.
   @if $size == s {
     .hide-gte-s, .hide-lte-xl, .hide-lte-m, .hide-lte-s{
       display: none !important;
@@ -40,9 +42,7 @@
     $columns: 16,
     $gutter: 5%,
     $width: 94%,
-    $outer_gutter_width: 3%,
-    $indent: true,
-    $push: true
+    $outer_gutter_width: 3%
   ){
 
   $column_width: $width/$columns;
@@ -51,6 +51,15 @@
   .row{
     width: 100%;
     float: left;
+  }
+
+  .nest{
+    width: 100%;
+    float: left;
+  }
+
+  .resume_grid{
+    width: 100%;
   }
 
   #{$container_name} {
@@ -73,32 +82,19 @@
         width: $i * $column_width - $gutter;
       }
     }
-
-    #{$container_name} {
-      @if $indent == true {
-        .indent-#{$i}-#{$size} {
-          padding-left: $i * $column_width;
-        }
-
-        .rightIndent-#{$i}-#{$size} {
-          padding-right: $i * $column_width;
-        }
+    
+    .indent-#{$i}-#{$size} {
+      position: relative;
+      #{$container_name} &{
+        left: $i * $column_width;
       }
     }
-
-    @if $push == true {
-      .push__#{$i} {
-        position: relative;
-        #{$container_name} &{
-          left: $i * $column_width;
-        }
-      }
-      .pull__#{$i} {
-        position: relative;
-        #{$container_name} &{
-          left: - $i * $column_width;
-        }
+    .rightIndent-#{$i}-#{$size} {
+      position: relative;
+      #{$container_name} &{
+        left: - $i * $column_width;
       }
     }
+    
   }
 }
