@@ -1,433 +1,800 @@
-.row {
-  width: 100%;
-  float: left; }
+@media (max-width: 887px) {
+  .row {
+    width: 100%;
+    float: left; }
 
-.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16 {
-  display: inline;
+  .nest {
+    width: 100%;
+    float: left; }
+
+  .resume_grid {
+    width: 100%; }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%; }
+
+  .col-1, .col-1-s {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4.5%; }
+    .container .col-1, .container .col-1-s {
+      width: 12.16667%; }
+      .container .col-1:last-child, .container .col-1-s:last-child {
+        margin-right: 0px;
+        width: 16.66667%; }
+
+  .indent-1, .indent-1-s {
+    position: relative; }
+    .container .indent-1, .container .indent-1-s {
+      left: 16.66667%; }
+
+  .col-2, .col-2-s {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4.5%; }
+    .container .col-2, .container .col-2-s {
+      width: 28.83333%; }
+      .container .col-2:last-child, .container .col-2-s:last-child {
+        margin-right: 0px;
+        width: 33.33333%; }
+
+  .indent-2, .indent-2-s {
+    position: relative; }
+    .container .indent-2, .container .indent-2-s {
+      left: 33.33333%; }
+
+  .col-3, .col-3-s {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4.5%; }
+    .container .col-3, .container .col-3-s {
+      width: 45.5%; }
+      .container .col-3:last-child, .container .col-3-s:last-child {
+        margin-right: 0px;
+        width: 50%; }
+
+  .indent-3, .indent-3-s {
+    position: relative; }
+    .container .indent-3, .container .indent-3-s {
+      left: 50%; }
+
+  .col-4, .col-4-s {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4.5%; }
+    .container .col-4, .container .col-4-s {
+      width: 62.16667%; }
+      .container .col-4:last-child, .container .col-4-s:last-child {
+        margin-right: 0px;
+        width: 66.66667%; }
+
+  .indent-4, .indent-4-s {
+    position: relative; }
+    .container .indent-4, .container .indent-4-s {
+      left: 66.66667%; }
+
+  .col-5, .col-5-s {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4.5%; }
+    .container .col-5, .container .col-5-s {
+      width: 78.83333%; }
+      .container .col-5:last-child, .container .col-5-s:last-child {
+        margin-right: 0px;
+        width: 83.33333%; }
+
+  .indent-5, .indent-5-s {
+    position: relative; }
+    .container .indent-5, .container .indent-5-s {
+      left: 83.33333%; }
+
+  .col-6, .col-6-s {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4.5%; }
+    .container .col-6, .container .col-6-s {
+      width: 95.5%; }
+      .container .col-6:last-child, .container .col-6-s:last-child {
+        margin-right: 0px;
+        width: 100%; }
+
+  .indent-6, .indent-6-s {
+    position: relative; }
+    .container .indent-6, .container .indent-6-s {
+      left: 100%; }
+
+  .hide-gte-s, .hide-lte-xl, .hide-lte-m, .hide-lte-s {
+    display: none !important; } }
+@media (min-width: 888px) and (max-width: 1183px) {
+  .row {
+    width: 100%;
+    float: left; }
+
+  .nest {
+    width: 100%;
+    float: left; }
+
+  .resume_grid {
+    width: 100%; }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%; }
+
+  .col-1, .col-1-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-1, .container .col-1-m {
+      width: 6.64433%; }
+      .container .col-1:last-child, .container .col-1-m:last-child {
+        margin-right: 0px;
+        width: 8.33333%; }
+
+  .indent-1, .indent-1-m {
+    position: relative; }
+    .container .indent-1, .container .indent-1-m {
+      left: 8.33333%; }
+
+  .col-2, .col-2-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-2, .container .col-2-m {
+      width: 14.97767%; }
+      .container .col-2:last-child, .container .col-2-m:last-child {
+        margin-right: 0px;
+        width: 16.66667%; }
+
+  .indent-2, .indent-2-m {
+    position: relative; }
+    .container .indent-2, .container .indent-2-m {
+      left: 16.66667%; }
+
+  .col-3, .col-3-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-3, .container .col-3-m {
+      width: 23.311%; }
+      .container .col-3:last-child, .container .col-3-m:last-child {
+        margin-right: 0px;
+        width: 25%; }
+
+  .indent-3, .indent-3-m {
+    position: relative; }
+    .container .indent-3, .container .indent-3-m {
+      left: 25%; }
+
+  .col-4, .col-4-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-4, .container .col-4-m {
+      width: 31.64433%; }
+      .container .col-4:last-child, .container .col-4-m:last-child {
+        margin-right: 0px;
+        width: 33.33333%; }
+
+  .indent-4, .indent-4-m {
+    position: relative; }
+    .container .indent-4, .container .indent-4-m {
+      left: 33.33333%; }
+
+  .col-5, .col-5-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-5, .container .col-5-m {
+      width: 39.97767%; }
+      .container .col-5:last-child, .container .col-5-m:last-child {
+        margin-right: 0px;
+        width: 41.66667%; }
+
+  .indent-5, .indent-5-m {
+    position: relative; }
+    .container .indent-5, .container .indent-5-m {
+      left: 41.66667%; }
+
+  .col-6, .col-6-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-6, .container .col-6-m {
+      width: 48.311%; }
+      .container .col-6:last-child, .container .col-6-m:last-child {
+        margin-right: 0px;
+        width: 50%; }
+
+  .indent-6, .indent-6-m {
+    position: relative; }
+    .container .indent-6, .container .indent-6-m {
+      left: 50%; }
+
+  .col-7, .col-7-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-7, .container .col-7-m {
+      width: 56.64433%; }
+      .container .col-7:last-child, .container .col-7-m:last-child {
+        margin-right: 0px;
+        width: 58.33333%; }
+
+  .indent-7, .indent-7-m {
+    position: relative; }
+    .container .indent-7, .container .indent-7-m {
+      left: 58.33333%; }
+
+  .col-8, .col-8-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-8, .container .col-8-m {
+      width: 64.97767%; }
+      .container .col-8:last-child, .container .col-8-m:last-child {
+        margin-right: 0px;
+        width: 66.66667%; }
+
+  .indent-8, .indent-8-m {
+    position: relative; }
+    .container .indent-8, .container .indent-8-m {
+      left: 66.66667%; }
+
+  .col-9, .col-9-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-9, .container .col-9-m {
+      width: 73.311%; }
+      .container .col-9:last-child, .container .col-9-m:last-child {
+        margin-right: 0px;
+        width: 75%; }
+
+  .indent-9, .indent-9-m {
+    position: relative; }
+    .container .indent-9, .container .indent-9-m {
+      left: 75%; }
+
+  .col-10, .col-10-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-10, .container .col-10-m {
+      width: 81.64433%; }
+      .container .col-10:last-child, .container .col-10-m:last-child {
+        margin-right: 0px;
+        width: 83.33333%; }
+
+  .indent-10, .indent-10-m {
+    position: relative; }
+    .container .indent-10, .container .indent-10-m {
+      left: 83.33333%; }
+
+  .col-11, .col-11-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-11, .container .col-11-m {
+      width: 89.97767%; }
+      .container .col-11:last-child, .container .col-11-m:last-child {
+        margin-right: 0px;
+        width: 91.66667%; }
+
+  .indent-11, .indent-11-m {
+    position: relative; }
+    .container .indent-11, .container .indent-11-m {
+      left: 91.66667%; }
+
+  .col-12, .col-12-m {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-12, .container .col-12-m {
+      width: 98.311%; }
+      .container .col-12:last-child, .container .col-12-m:last-child {
+        margin-right: 0px;
+        width: 100%; }
+
+  .indent-12, .indent-12-m {
+    position: relative; }
+    .container .indent-12, .container .indent-12-m {
+      left: 100%; }
+
+  .hide-gte-m, .hide-lte-m, .hide-gte-s, .hide-lte-xl {
+    display: none !important; } }
+@media (min-width: 1184px) {
+  .row {
+    width: 100%;
+    float: left; }
+
+  .nest {
+    width: 100%;
+    float: left; }
+
+  .resume_grid {
+    width: 100%; }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%; }
+
+  .col-1, .col-1-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-1, .container .col-1-xl {
+      width: 4.561%; }
+      .container .col-1:last-child, .container .col-1-xl:last-child {
+        margin-right: 0px;
+        width: 6.25%; }
+
+  .indent-1, .indent-1-xl {
+    position: relative; }
+    .container .indent-1, .container .indent-1-xl {
+      left: 6.25%; }
+
+  .col-2, .col-2-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-2, .container .col-2-xl {
+      width: 10.811%; }
+      .container .col-2:last-child, .container .col-2-xl:last-child {
+        margin-right: 0px;
+        width: 12.5%; }
+
+  .indent-2, .indent-2-xl {
+    position: relative; }
+    .container .indent-2, .container .indent-2-xl {
+      left: 12.5%; }
+
+  .col-3, .col-3-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-3, .container .col-3-xl {
+      width: 17.061%; }
+      .container .col-3:last-child, .container .col-3-xl:last-child {
+        margin-right: 0px;
+        width: 18.75%; }
+
+  .indent-3, .indent-3-xl {
+    position: relative; }
+    .container .indent-3, .container .indent-3-xl {
+      left: 18.75%; }
+
+  .col-4, .col-4-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-4, .container .col-4-xl {
+      width: 23.311%; }
+      .container .col-4:last-child, .container .col-4-xl:last-child {
+        margin-right: 0px;
+        width: 25%; }
+
+  .indent-4, .indent-4-xl {
+    position: relative; }
+    .container .indent-4, .container .indent-4-xl {
+      left: 25%; }
+
+  .col-5, .col-5-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-5, .container .col-5-xl {
+      width: 29.561%; }
+      .container .col-5:last-child, .container .col-5-xl:last-child {
+        margin-right: 0px;
+        width: 31.25%; }
+
+  .indent-5, .indent-5-xl {
+    position: relative; }
+    .container .indent-5, .container .indent-5-xl {
+      left: 31.25%; }
+
+  .col-6, .col-6-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-6, .container .col-6-xl {
+      width: 35.811%; }
+      .container .col-6:last-child, .container .col-6-xl:last-child {
+        margin-right: 0px;
+        width: 37.5%; }
+
+  .indent-6, .indent-6-xl {
+    position: relative; }
+    .container .indent-6, .container .indent-6-xl {
+      left: 37.5%; }
+
+  .col-7, .col-7-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-7, .container .col-7-xl {
+      width: 42.061%; }
+      .container .col-7:last-child, .container .col-7-xl:last-child {
+        margin-right: 0px;
+        width: 43.75%; }
+
+  .indent-7, .indent-7-xl {
+    position: relative; }
+    .container .indent-7, .container .indent-7-xl {
+      left: 43.75%; }
+
+  .col-8, .col-8-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-8, .container .col-8-xl {
+      width: 48.311%; }
+      .container .col-8:last-child, .container .col-8-xl:last-child {
+        margin-right: 0px;
+        width: 50%; }
+
+  .indent-8, .indent-8-xl {
+    position: relative; }
+    .container .indent-8, .container .indent-8-xl {
+      left: 50%; }
+
+  .col-9, .col-9-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-9, .container .col-9-xl {
+      width: 54.561%; }
+      .container .col-9:last-child, .container .col-9-xl:last-child {
+        margin-right: 0px;
+        width: 56.25%; }
+
+  .indent-9, .indent-9-xl {
+    position: relative; }
+    .container .indent-9, .container .indent-9-xl {
+      left: 56.25%; }
+
+  .col-10, .col-10-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-10, .container .col-10-xl {
+      width: 60.811%; }
+      .container .col-10:last-child, .container .col-10-xl:last-child {
+        margin-right: 0px;
+        width: 62.5%; }
+
+  .indent-10, .indent-10-xl {
+    position: relative; }
+    .container .indent-10, .container .indent-10-xl {
+      left: 62.5%; }
+
+  .col-11, .col-11-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-11, .container .col-11-xl {
+      width: 67.061%; }
+      .container .col-11:last-child, .container .col-11-xl:last-child {
+        margin-right: 0px;
+        width: 68.75%; }
+
+  .indent-11, .indent-11-xl {
+    position: relative; }
+    .container .indent-11, .container .indent-11-xl {
+      left: 68.75%; }
+
+  .col-12, .col-12-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-12, .container .col-12-xl {
+      width: 73.311%; }
+      .container .col-12:last-child, .container .col-12-xl:last-child {
+        margin-right: 0px;
+        width: 75%; }
+
+  .indent-12, .indent-12-xl {
+    position: relative; }
+    .container .indent-12, .container .indent-12-xl {
+      left: 75%; }
+
+  .col-13, .col-13-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-13, .container .col-13-xl {
+      width: 79.561%; }
+      .container .col-13:last-child, .container .col-13-xl:last-child {
+        margin-right: 0px;
+        width: 81.25%; }
+
+  .indent-13, .indent-13-xl {
+    position: relative; }
+    .container .indent-13, .container .indent-13-xl {
+      left: 81.25%; }
+
+  .col-14, .col-14-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-14, .container .col-14-xl {
+      width: 85.811%; }
+      .container .col-14:last-child, .container .col-14-xl:last-child {
+        margin-right: 0px;
+        width: 87.5%; }
+
+  .indent-14, .indent-14-xl {
+    position: relative; }
+    .container .indent-14, .container .indent-14-xl {
+      left: 87.5%; }
+
+  .col-15, .col-15-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-15, .container .col-15-xl {
+      width: 92.061%; }
+      .container .col-15:last-child, .container .col-15-xl:last-child {
+        margin-right: 0px;
+        width: 93.75%; }
+
+  .indent-15, .indent-15-xl {
+    position: relative; }
+    .container .indent-15, .container .indent-15-xl {
+      left: 93.75%; }
+
+  .col-16, .col-16-xl {
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 1.689%; }
+    .container .col-16, .container .col-16-xl {
+      width: 98.311%; }
+      .container .col-16:last-child, .container .col-16-xl:last-child {
+        margin-right: 0px;
+        width: 100%; }
+
+  .indent-16, .indent-16-xl {
+    position: relative; }
+    .container .indent-16, .container .indent-16-xl {
+      left: 100%; }
+
+  .hide-gte-xl, .hide-lte-xl, .hide-gte-m, .hide-gte-s {
+    display: none !important; } }
+@media (min-width: 1280px) {
+  .container {
+    width: 1214px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: auto; } }
+.pad {
+  padding: 10px; }
+
+.padkids > * {
+  padding: 10px; }
+
+.f1over2 {
   float: left;
-  margin-left: 10px;
-  margin-right: 10px; }
+  width: 50%; }
 
-.relative, .push__1, .pull__1, .push__2, .pull__2, .push__3, .pull__3, .push__4, .pull__4, .push__5, .pull__5, .push__6, .pull__6, .push__7, .pull__7, .push__8, .pull__8, .push__9, .pull__9, .push__10, .pull__10, .push__11, .pull__11, .push__12, .pull__12, .push__13, .pull__13, .push__14, .pull__14, .push__15, .pull__15, .push__16, .pull__16 {
-  position: relative; }
-
-.container_12 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-  padding-left: 22px;
-  padding-right: 22px; }
-
-.container_12 .col-1 {
-  width: 60px; }
-
-.container_12 .indent__1 {
-  padding-left: 80px; }
-.container_12 .rightIndent__1 {
-  padding-right: 80px; }
-
-.container_12 .push__1 {
-  left: 80px; }
-
-.container_12 .pull__1 {
-  left: -80px; }
-
-.container_12 .col-2 {
-  width: 140px; }
-
-.container_12 .indent__2 {
-  padding-left: 160px; }
-.container_12 .rightIndent__2 {
-  padding-right: 160px; }
-
-.container_12 .push__2 {
-  left: 160px; }
-
-.container_12 .pull__2 {
-  left: -160px; }
-
-.container_12 .col-3 {
-  width: 220px; }
-
-.container_12 .indent__3 {
-  padding-left: 240px; }
-.container_12 .rightIndent__3 {
-  padding-right: 240px; }
-
-.container_12 .push__3 {
-  left: 240px; }
-
-.container_12 .pull__3 {
-  left: -240px; }
-
-.container_12 .col-4 {
-  width: 300px; }
-
-.container_12 .indent__4 {
-  padding-left: 320px; }
-.container_12 .rightIndent__4 {
-  padding-right: 320px; }
-
-.container_12 .push__4 {
-  left: 320px; }
-
-.container_12 .pull__4 {
-  left: -320px; }
-
-.container_12 .col-5 {
-  width: 380px; }
-
-.container_12 .indent__5 {
-  padding-left: 400px; }
-.container_12 .rightIndent__5 {
-  padding-right: 400px; }
-
-.container_12 .push__5 {
-  left: 400px; }
-
-.container_12 .pull__5 {
-  left: -400px; }
-
-.container_12 .col-6 {
-  width: 460px; }
-
-.container_12 .indent__6 {
-  padding-left: 480px; }
-.container_12 .rightIndent__6 {
-  padding-right: 480px; }
-
-.container_12 .push__6 {
-  left: 480px; }
-
-.container_12 .pull__6 {
-  left: -480px; }
-
-.container_12 .col-7 {
-  width: 540px; }
-
-.container_12 .indent__7 {
-  padding-left: 560px; }
-.container_12 .rightIndent__7 {
-  padding-right: 560px; }
-
-.container_12 .push__7 {
-  left: 560px; }
-
-.container_12 .pull__7 {
-  left: -560px; }
-
-.container_12 .col-8 {
-  width: 620px; }
-
-.container_12 .indent__8 {
-  padding-left: 640px; }
-.container_12 .rightIndent__8 {
-  padding-right: 640px; }
-
-.container_12 .push__8 {
-  left: 640px; }
-
-.container_12 .pull__8 {
-  left: -640px; }
-
-.container_12 .col-9 {
-  width: 700px; }
-
-.container_12 .indent__9 {
-  padding-left: 720px; }
-.container_12 .rightIndent__9 {
-  padding-right: 720px; }
-
-.container_12 .push__9 {
-  left: 720px; }
-
-.container_12 .pull__9 {
-  left: -720px; }
-
-.container_12 .col-10 {
-  width: 780px; }
-
-.container_12 .indent__10 {
-  padding-left: 800px; }
-.container_12 .rightIndent__10 {
-  padding-right: 800px; }
-
-.container_12 .push__10 {
-  left: 800px; }
-
-.container_12 .pull__10 {
-  left: -800px; }
-
-.container_12 .col-11 {
-  width: 860px; }
-
-.container_12 .indent__11 {
-  padding-left: 880px; }
-.container_12 .rightIndent__11 {
-  padding-right: 880px; }
-
-.container_12 .push__11 {
-  left: 880px; }
-
-.container_12 .pull__11 {
-  left: -880px; }
-
-.container_12 .col-12 {
-  width: 940px; }
-
-.container_12 .indent__12 {
-  padding-left: 960px; }
-.container_12 .rightIndent__12 {
-  padding-right: 960px; }
-
-.container_12 .push__12 {
-  left: 960px; }
-
-.container_12 .pull__12 {
-  left: -960px; }
-
-.row {
-  width: 100%;
-  float: left; }
-
-.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16 {
-  display: inline;
+.f1over3 {
   float: left;
-  margin-left: 10px;
-  margin-right: 10px; }
-
-.relative, .push__1, .pull__1, .push__2, .pull__2, .push__3, .pull__3, .push__4, .pull__4, .push__5, .pull__5, .push__6, .pull__6, .push__7, .pull__7, .push__8, .pull__8, .push__9, .pull__9, .push__10, .pull__10, .push__11, .pull__11, .push__12, .pull__12, .push__13, .pull__13, .push__14, .pull__14, .push__15, .pull__15, .push__16, .pull__16 {
-  position: relative; }
-
-.container_16 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1184px;
-  padding-left: 22px;
-  padding-right: 22px; }
-
-.container_16 .col-1 {
-  width: 54px; }
-
-.container_16 .indent__1 {
-  padding-left: 74px; }
-.container_16 .rightIndent__1 {
-  padding-right: 74px; }
-
-.container_16 .push__1 {
-  left: 74px; }
-
-.container_16 .pull__1 {
-  left: -74px; }
-
-.container_16 .col-2 {
-  width: 128px; }
-
-.container_16 .indent__2 {
-  padding-left: 148px; }
-.container_16 .rightIndent__2 {
-  padding-right: 148px; }
-
-.container_16 .push__2 {
-  left: 148px; }
-
-.container_16 .pull__2 {
-  left: -148px; }
-
-.container_16 .col-3 {
-  width: 202px; }
-
-.container_16 .indent__3 {
-  padding-left: 222px; }
-.container_16 .rightIndent__3 {
-  padding-right: 222px; }
-
-.container_16 .push__3 {
-  left: 222px; }
-
-.container_16 .pull__3 {
-  left: -222px; }
-
-.container_16 .col-4 {
-  width: 276px; }
-
-.container_16 .indent__4 {
-  padding-left: 296px; }
-.container_16 .rightIndent__4 {
-  padding-right: 296px; }
-
-.container_16 .push__4 {
-  left: 296px; }
-
-.container_16 .pull__4 {
-  left: -296px; }
-
-.container_16 .col-5 {
-  width: 350px; }
-
-.container_16 .indent__5 {
-  padding-left: 370px; }
-.container_16 .rightIndent__5 {
-  padding-right: 370px; }
-
-.container_16 .push__5 {
-  left: 370px; }
-
-.container_16 .pull__5 {
-  left: -370px; }
-
-.container_16 .col-6 {
-  width: 424px; }
-
-.container_16 .indent__6 {
-  padding-left: 444px; }
-.container_16 .rightIndent__6 {
-  padding-right: 444px; }
-
-.container_16 .push__6 {
-  left: 444px; }
-
-.container_16 .pull__6 {
-  left: -444px; }
-
-.container_16 .col-7 {
-  width: 498px; }
-
-.container_16 .indent__7 {
-  padding-left: 518px; }
-.container_16 .rightIndent__7 {
-  padding-right: 518px; }
-
-.container_16 .push__7 {
-  left: 518px; }
-
-.container_16 .pull__7 {
-  left: -518px; }
-
-.container_16 .col-8 {
-  width: 572px; }
-
-.container_16 .indent__8 {
-  padding-left: 592px; }
-.container_16 .rightIndent__8 {
-  padding-right: 592px; }
-
-.container_16 .push__8 {
-  left: 592px; }
-
-.container_16 .pull__8 {
-  left: -592px; }
-
-.container_16 .col-9 {
-  width: 646px; }
-
-.container_16 .indent__9 {
-  padding-left: 666px; }
-.container_16 .rightIndent__9 {
-  padding-right: 666px; }
-
-.container_16 .push__9 {
-  left: 666px; }
-
-.container_16 .pull__9 {
-  left: -666px; }
-
-.container_16 .col-10 {
-  width: 720px; }
-
-.container_16 .indent__10 {
-  padding-left: 740px; }
-.container_16 .rightIndent__10 {
-  padding-right: 740px; }
-
-.container_16 .push__10 {
-  left: 740px; }
-
-.container_16 .pull__10 {
-  left: -740px; }
-
-.container_16 .col-11 {
-  width: 794px; }
-
-.container_16 .indent__11 {
-  padding-left: 814px; }
-.container_16 .rightIndent__11 {
-  padding-right: 814px; }
-
-.container_16 .push__11 {
-  left: 814px; }
-
-.container_16 .pull__11 {
-  left: -814px; }
-
-.container_16 .col-12 {
-  width: 868px; }
-
-.container_16 .indent__12 {
-  padding-left: 888px; }
-.container_16 .rightIndent__12 {
-  padding-right: 888px; }
-
-.container_16 .push__12 {
-  left: 888px; }
-
-.container_16 .pull__12 {
-  left: -888px; }
-
-.container_16 .col-13 {
-  width: 942px; }
-
-.container_16 .indent__13 {
-  padding-left: 962px; }
-.container_16 .rightIndent__13 {
-  padding-right: 962px; }
-
-.container_16 .push__13 {
-  left: 962px; }
-
-.container_16 .pull__13 {
-  left: -962px; }
-
-.container_16 .col-14 {
-  width: 1016px; }
-
-.container_16 .indent__14 {
-  padding-left: 1036px; }
-.container_16 .rightIndent__14 {
-  padding-right: 1036px; }
-
-.container_16 .push__14 {
-  left: 1036px; }
-
-.container_16 .pull__14 {
-  left: -1036px; }
-
-.container_16 .col-15 {
-  width: 1090px; }
-
-.container_16 .indent__15 {
-  padding-left: 1110px; }
-.container_16 .rightIndent__15 {
-  padding-right: 1110px; }
-
-.container_16 .push__15 {
-  left: 1110px; }
-
-.container_16 .pull__15 {
-  left: -1110px; }
-
-.container_16 .col-16 {
-  width: 1164px; }
-
-.container_16 .indent__16 {
-  padding-left: 1184px; }
-.container_16 .rightIndent__16 {
-  padding-right: 1184px; }
-
-.container_16 .push__16 {
-  left: 1184px; }
-
-.container_16 .pull__16 {
-  left: -1184px; }
+  width: 33.33333%; }
+
+.f1over4 {
+  float: left;
+  width: 25%; }
+
+.f1over5 {
+  float: left;
+  width: 20%; }
+
+.f1over6 {
+  float: left;
+  width: 16.66667%; }
+
+.f1over7 {
+  float: left;
+  width: 14.28571%; }
+
+.f1over8 {
+  float: left;
+  width: 12.5%; }
+
+.f1over9 {
+  float: left;
+  width: 11.11111%; }
+
+.f1over10 {
+  float: left;
+  width: 10%; }
+
+.f2over3 {
+  float: left;
+  width: 66.66667%; }
+
+.f2over4 {
+  float: left;
+  width: 50%; }
+
+.f2over5 {
+  float: left;
+  width: 40%; }
+
+.f2over6 {
+  float: left;
+  width: 33.33333%; }
+
+.f2over7 {
+  float: left;
+  width: 28.57143%; }
+
+.f2over8 {
+  float: left;
+  width: 25%; }
+
+.f2over9 {
+  float: left;
+  width: 22.22222%; }
+
+.f2over10 {
+  float: left;
+  width: 20%; }
+
+.f3over4 {
+  float: left;
+  width: 75%; }
+
+.f3over5 {
+  float: left;
+  width: 60%; }
+
+.f3over6 {
+  float: left;
+  width: 50%; }
+
+.f3over7 {
+  float: left;
+  width: 42.85714%; }
+
+.f3over8 {
+  float: left;
+  width: 37.5%; }
+
+.f3over9 {
+  float: left;
+  width: 33.33333%; }
+
+.f3over10 {
+  float: left;
+  width: 30%; }
+
+.f4over5 {
+  float: left;
+  width: 80%; }
+
+.f4over6 {
+  float: left;
+  width: 66.66667%; }
+
+.f4over7 {
+  float: left;
+  width: 57.14286%; }
+
+.f4over8 {
+  float: left;
+  width: 50%; }
+
+.f4over9 {
+  float: left;
+  width: 44.44444%; }
+
+.f4over10 {
+  float: left;
+  width: 40%; }
+
+.f5over6 {
+  float: left;
+  width: 83.33333%; }
+
+.f5over7 {
+  float: left;
+  width: 71.42857%; }
+
+.f5over8 {
+  float: left;
+  width: 62.5%; }
+
+.f5over9 {
+  float: left;
+  width: 55.55556%; }
+
+.f5over10 {
+  float: left;
+  width: 50%; }
+
+.f6over7 {
+  float: left;
+  width: 85.71429%; }
+
+.f6over8 {
+  float: left;
+  width: 75%; }
+
+.f6over9 {
+  float: left;
+  width: 66.66667%; }
+
+.f6over10 {
+  float: left;
+  width: 60%; }
+
+.f7over8 {
+  float: left;
+  width: 87.5%; }
+
+.f7over9 {
+  float: left;
+  width: 77.77778%; }
+
+.f7over10 {
+  float: left;
+  width: 70%; }
+
+.f8over9 {
+  float: left;
+  width: 88.88889%; }
+
+.f8over10 {
+  float: left;
+  width: 80%; }
+
+.f9over10 {
+  float: left;
+  width: 90%; }
 
 /*# sourceMappingURL=main.css.map */

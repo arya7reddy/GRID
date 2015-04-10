@@ -4,9 +4,6 @@
   $gutter
   ){
 
-  $width: 94%;
-  $column_width: $width/$columns;
-
   @include generate_grid($size, $columns, $gutter);
 
   // Hide classes for different view ports.
@@ -28,13 +25,13 @@
 @mixin generate_grid(
     $size: xl,
     $columns: 16,
-    $gutter: 5%,
-    $width: 94%,
-    $outer_gutter_width: 3%
+    $gutter: 1.689%
   ){
 
+  $width: 100%;
+  $outer_gutter_width: 3%;
   $column_width: $width/$columns;
-  $container_name: ".container_#{$columns}";
+  $container_name: ".container";
 
   .row{
     width: 100%;
@@ -53,21 +50,26 @@
   #{$container_name} {
     margin-left: auto;
     margin-right: auto;
-    width: $width;
+    width: 94%;
     padding-left: $outer_gutter_width;
     padding-right: $outer_gutter_width;
   }
-
+ 
   @for $i from 1 through $columns{
 
     .col-#{$i}, .col-#{$i}-#{$size} {
       display: inline;
       float: left;
-      margin-left: $gutter/2;
-      margin-right: $gutter/2;
+      margin-left: 0px;
+      margin-right: $gutter;
 
       #{$container_name} &{
         width: $i * $column_width - $gutter;
+
+        &:last-child{
+          margin-right: 0px;
+          width: $i * $column_width;
+        }
       }
     }
 
